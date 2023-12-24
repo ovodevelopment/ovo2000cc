@@ -41003,8 +41003,8 @@ cr.behaviors.Platform = function(runtime)
 	Acts.prototype.SetMaxSpeed = function (maxspeed)
 	{
 		this.maxspeed = maxspeed;
-		if (this.maxspeed < 0)
-			this.maxspeed = 0;
+		if (this.maxspeed > 0)
+			this.maxspeed = 2000;
 	};
 	Acts.prototype.SetAcceleration = function (acc)
 	{
